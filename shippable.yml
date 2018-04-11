@@ -13,4 +13,23 @@ build:
     - mvn install
     # Copy artifcats to nexus
     - mvn deploy
+
+resources:
+  - name: nodeapp_maven_repo
+    type: gitRepo
+    integration: "drship_github"
+    versionTemplate:
+      sourceName: "ambarish2012/nodeapp_maven"
+      branch: master
     
+jobs:
+  - name: pull_maven_dependencies
+    type: runSh
+    steps:
+      - IN: nodeapp_maven_repo
+      - TASK:
+          script:
+            - mkdir ~/.m2
+            - cp settings.xml ~/.m2/.
+            - cd simple
+            - mvn dependency:resolve
