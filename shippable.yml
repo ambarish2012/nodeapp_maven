@@ -31,7 +31,9 @@ jobs:
           script:
             - sudo apt-get install maven
             - mvn -version
+            - pushd $(shipctl get_resource_state "nodeapp_maven_repo")
             - mkdir ~/.m2
             - cp settings.xml ~/.m2/.
             - cd simple
             - mvn dependency:resolve
+            - popd
