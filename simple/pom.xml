@@ -72,9 +72,9 @@
       <url>http://54.237.215.112:8081/repository/nodeapp_mvn_releases/</url>
     </repository>
   </distributionManagement>
-    <repositories>
+  <repositories>
     <repository>
-      <id>maven-group</id>
+      <id>node_app_group</id>
       <url>http://54.237.215.112:8081/repository/node_app_group/</url>
     </repository>
   </repositories>
