@@ -9,6 +9,8 @@ build:
     - mkdir ~/.m2
     - cp settings.xml ~/.m2/.
     # Build
+    - cd simple
     - mvn install
     # Copy artifcats to nexus
     - mvn deploy
+    - popd
