@@ -65,11 +65,17 @@
   <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
-      <url>http://54.90.252.222:8081/repository/nodeapp_mvn_snapshot/</url>
+      <url>http://54.237.215.112:8081/repository/nodeapp_mvn_snapshot/</url>
     </snapshotRepository>
     <repository>
       <id>nexus-releases</id>
-      <url>http://54.90.252.222:8081/repository/nodeapp_mvn_releases/</url>
+      <url>http://54.237.215.112:8081/repository/nodeapp_mvn_releases/</url>
     </repository>
   </distributionManagement>
+    <repositories>
+    <repository>
+      <id>maven-group</id>
+      <url>http://54.237.215.112:8081/repository/nodeapp_mvn_group/</url>
+    </repository>
+  </repositories>
 </project>
