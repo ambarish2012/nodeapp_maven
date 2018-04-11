@@ -75,7 +75,7 @@
     <repositories>
     <repository>
       <id>maven-group</id>
-      <url>http://54.237.215.112:8081/repository/nodeapp_mvn_group/</url>
+      <url>http://54.237.215.112:8081/repository/node_app_group/</url>
     </repository>
   </repositories>
 </project>
