@@ -5,5 +5,10 @@ jdk:
 
 build:
   ci:
+    # Configure nexus repository settings
+    - mkdir ~/.m2
+    - cp settings.xml ~/.m2/.
+    # Build
     - mvn install
+    # Copy artifcats to nexus
     - mvn deploy
