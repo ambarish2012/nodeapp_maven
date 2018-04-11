@@ -29,6 +29,8 @@ jobs:
       - IN: nodeapp_maven_repo
       - TASK:
           script:
+            - sudo apt-get install maven
+            - mvn -version
             - mkdir ~/.m2
             - cp settings.xml ~/.m2/.
             - cd simple
