@@ -13,4 +13,4 @@ build:
     - mvn install
     # Copy artifcats to nexus
     - mvn deploy
-    - popd
+    
