@@ -65,17 +65,17 @@
   <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
-      <url>http://52.91.169.45:8081/repository/maven-snapshots/</url>
+      <url>http://74.129.56.184:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
     <repository>
       <id>nexus-releases</id>
-      <url>http://52.91.169.45:8081/repository/maven-releases/</url>
+      <url>http://74.129.56.184:8081/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
   <repositories>
     <repository>
       <id>node_app_group</id>
-      <url>http://52.91.169.45:8081/repository/maven-public/</url>
+      <url>http://74.129.56.184:8081/repository/maven-public/</url>
     </repository>
   </repositories>
 </project>
